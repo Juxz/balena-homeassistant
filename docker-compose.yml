@@ -1,0 +1,14 @@
+version: '2.1'
+
+volumes:
+  volume_homeassistant:
+
+services:
+  homeassistant:
+    build:
+      context: ./balena-homeassistant
+    volumes:
+      - volume_homeassistant:/config
+    #privileged: true
+    ports:
+      - 8123:8123
