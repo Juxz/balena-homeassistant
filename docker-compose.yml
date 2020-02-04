@@ -6,7 +6,7 @@ volumes:
 services:
   homeassistant:
     build:
-      context: ./balena-homeassistant
+      context: ./
     volumes:
       - volume_homeassistant:/config
     #privileged: true
