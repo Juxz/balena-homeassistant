@@ -9,6 +9,5 @@ services:
       context: ./
     volumes:
       - volume_homeassistant:/config
-    #privileged: true
     ports:
       - 8123:8123
