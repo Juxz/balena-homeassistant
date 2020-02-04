@@ -1,5 +1,5 @@
-FROM homeassistant/armv7-homeassistant:stable
-#FROM homeassistant/raspberrypi4-64-homeassistant:stable
+#FROM homeassistant/armv7-homeassistant:stable
+FROM homeassistant/raspberrypi4-64-homeassistant:stable
 
 
 WORKDIR /scripts
