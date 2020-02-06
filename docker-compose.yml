@@ -11,3 +11,4 @@ services:
       - volume_homeassistant:/config
     ports:
       - 8123:8123
+    network_mode: host
