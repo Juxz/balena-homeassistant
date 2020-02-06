@@ -6,4 +6,3 @@ WORKDIR /scripts
 COPY scripts/. .
 
 CMD /bin/bash start.sh
-#CMD python -m homeassistant --config /config
