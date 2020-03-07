@@ -1,11 +1,7 @@
 #FROM homeassistant/armv7-homeassistant:stable
 FROM homeassistant/raspberrypi4-64-homeassistant:stable
-
-
 WORKDIR /scripts
-COPY scripts/. .
-
+COPY scripts/. ./
 # Install HACS once during image build, then assume it can be updated during runtime
 #RUN /bin/bash install_hacs.sh
-
-CMD /bin/bash start.sh
+CMD ["/bin/bash", "start.sh"]
